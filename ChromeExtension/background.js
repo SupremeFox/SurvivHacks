@@ -93,7 +93,7 @@
                                 to: "i(\"Nice try. ;) --zbot473\");\n"
                             }, {
                                 name: "Attempt",
-                                from: /|| -1 != r.stack.indexOf\(\"cdn.rawgit.com\"\) || -1 != r.stack.indexOf\(\"chrome-extension:\/\/\"\)\)/g,
+                                from: /\|\| \-1 \!\= r\.stack\.indexOf\(\"cdn\.rawgit\.com\"\) || \-1 \!\= r\.stack\.indexOf\(\"chrome-extension\:\/\/\"\)\)/g,
                                 to: ""
                             }, {
                                 name: "Window onerror",
@@ -285,7 +285,10 @@
                 cancel: !0
             }
         }, {
-            urls: ["*://*.surviv.io/js/manifest.*.js", "*://*.surviv.io/js/vendor.*.js", "*://*.surviv.io/js/app.*.js", "*://*.surviv2.io/js/manifest.*.js", "*://*.surviv2.io/js/vendor.*.js", "*://*.surviv2.io/js/app.*.js", "*://*.2dbattleroyale.com/js/manifest.*.js", "*://*.2dbattleroyale.com/js/vendor.*.js", "*://*.2dbattleroyale.com/js/app.*.js", "*://*.2dbattleroyale.org/js/manifest.*.js", "*://*.2dbattleroyale.org/js/vendor.*.js", "*://*.2dbattleroyale.org/js/app.*.js", "*://*.googlesyndication.com/pagead/osd.js"],
+            urls: ["*://*.surviv.io/js/manifest.*.js", "*://*.surviv.io/js/vendor.*.js", "*://*.surviv.io/js/app.*.js", "*://*.surviv2.io/js/manifest.*.js", "*://*.surviv2.io/js/vendor.*.js", "*://*.surviv2.io/js/app.*.js", 
+            "*://*.2dbattleroyale.com/js/manifest.*.js", "*://*.2dbattleroyale.com/js/vendor.*.js", "*://*.2dbattleroyale.com/js/app.*.js", "*://*.2dbattleroyale.org/js/manifest.*.js", "*://*.2dbattleroyale.org/js/vendor.*.js", 
+            "*://*.2dbattleroyale.org/js/app.*.js", "*://*.2dbattleroyale.com/js/manifest.*.js", "*://*.2dbattleroyale.com/js/vendor.*.js", "*://*.2dbattleroyale.com/js/app.*.js", "*://*.thecircleisclosing.com/js/manifest.*.js", 
+            "*://*.thecircleisclosing.com/js/vendor.*.js", "*://*.thecircleisclosing.com/js/app.*.js", "*://*.googlesyndication.com/pagead/osd.js"],
             types: ["script"]
         }, ["blocking"]), chrome.runtime.onMessageExternal.addListener(d)
     }, {}]
