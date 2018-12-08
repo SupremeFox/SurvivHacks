@@ -85,13 +85,17 @@
                                 to: '$1(document).on("mouseup",function($2){2==e.which&&$3.pingKeyTriggered&&$4.pingMouseTriggered&&$5.triggerPing(),2==e.which'
                             }, {
                                 name: "Window.appk fix",
-		                    	from: /([A-Za-z_]).storeGeneric\("error","error"\),([A-Za-z_]).enabled=!1,e&&e.ws&&e.ws.close\(\);var t=document.body;if\(t\){for\(;t.firstChild;\)t.removeChild\(t.firstChild\);r\(t\)}/g,
+                                from: /([A-Za-z_]).storeGeneric\("error","error"\),([A-Za-z_]).enabled=!1,e&&e.ws&&e.ws.close\(\);var t=document.body;if\(t\){for\(;t.firstChild;\)t.removeChild\(t.firstChild\);r\(t\)}/g,
                                 to: ""
                             }, {
                                 name: "Console Fix",
-		                    	from: /console.log=i,/g,
+                                from: /console.log=i,/g,
                                 to: "i(\"Nice try. ;) --zbot473\");\n"
-                            },  {
+                            }, {
+                                name: "Attempt",
+                                from: /|| -1 != r.stack.indexOf\(\"cdn.rawgit.com\"\) || -1 != r.stack.indexOf\(\"chrome-extension:\/\/\"\)\)/g,
+                                to: ""
+                            }, {
                                 name: "Window onerror",
                                 from: /window.onerror/g,
                                 to: "window.onrandomvariable"

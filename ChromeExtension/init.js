@@ -822,7 +822,7 @@
                     }
                 }), r.scope = options.smokeGrenadeAlpha, o.scope = function() {};
                 // **Exports**
-                var p = exports.ceee80d9.exports.Defs,
+                var p = exports.model.exports.Defs,
                     bullets = exports["989ad62a"].exports.bullets,
                     tracerColors = exports["989ad62a"].exports.tracerColors,
                     u = exports["989ad62a"].exports.player,
